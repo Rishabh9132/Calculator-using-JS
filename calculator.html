@@ -1,0 +1,123 @@
+<html>
+<head>
+	<title>Calculator</title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="css/normalize.css">
+	<style type="text/css">
+		div{
+			margin: 100px auto;
+			box-sizing: border-box;
+			width: 255px;
+			border: 2px solid #5D6E53;
+			box-shadow: 5px 6px rgba(0,0,0,0.7);
+		}
+		body{
+			background: linear-gradient(90deg,#00AEEF,#522BAC)
+		}
+		.btn,.custom-button{
+			width:50px;
+			height: 50px; 
+			margin: 2px 5px;
+			box-sizing: border-box;	
+			color: white;
+			border-radius: 10px;
+		}
+		.custom-button{
+			border: 1px solid gray;
+			background: rgb(173, 166, 38);
+			
+		}
+		#display{
+			width: 100%;
+			margin-bottom: 5px;
+			margin: 0 auto;
+			height: 50PX;
+		}
+		h1{
+			text-align: center;
+			color: white;
+			text-align: 2px;
+		}
+
+		div{
+			background: #522CA8;
+			box-sizing: border-box;
+		}
+	</style>
+</head>
+<body>
+<div>
+	<h1>Calculator</h1>
+	<form name="calculator">
+		
+		<table>
+			<!-- <tr> -->
+				<!-- <td> -->
+					<input type="text" name="display" id="display" disabled >
+				<!-- </td> -->
+			<!-- </tr> -->
+			<tr>
+				<td>
+					<input type="button" class="custom-button " name="one" value="1" onclick="calculator.display.value += '1'" >	
+				</td>
+				<td>
+					<input type="button" class="custom-button" name="two" value="2" onclick="calculator.display.value += '2'" >	
+				</td>
+				<td>
+					<input type="button" class="custom-button" name="three" value="3" onclick="calculator.display.value += '3'" >	
+				</td>
+				<td>
+					<input type="button" class="btn btn-primary" name="plus" value="+" onclick="calculator.display.value += '+'" >	
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<input type="button" name="four"  class="custom-button" value="4" onclick="calculator.display.value += '4'" >	
+				</td>
+				<td>
+					<input type="button"  class="custom-button" name="five" value="5" onclick="calculator.display.value += '5'" >	
+				</td>
+				<td>
+					<input type="button"  class="custom-button" name="six" value="6" onclick="calculator.display.value += '6'" >	
+				</td>
+				<td>
+					<input type="button" name="minus" class="btn btn-primary" value="-" onclick="calculator.display.value += '-'" >	
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<input type="button"  class="custom-button" name="seven" value="7" onclick="calculator.display.value += '7'" >	
+				</td>
+				<td>
+					<input type="button"  class="custom-button" name="eight" value="8" onclick="calculator.display.value += '8'" >	
+				</td>
+				<td>
+					<input type="button"  class="custom-button" name="nine" value="9" onclick="calculator.display.value += '9'" >	
+				</td>
+				<td>
+					<input type="button" class="btn btn-primary" name="multiply" value="X" onclick="calculator.display.value += '*'" >	
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<input type="button" class="btn btn-danger" name="clear" value="C" onclick="calculator.display.value = ' '" >	
+				</td>
+				<td>
+					<input type="button" name="zero" class="custom-button" value="0" onclick="calculator.display.value += '0'" >	
+				</td>
+				<td>
+					<input type="button" class="btn btn-info" name="equal" value="=" onclick="calculator.display.value = eval(calculator.display.value)">	
+				</td>
+				<td>
+					<input type="button" class="btn btn-primary" name="divide" value="/" onclick="calculator.display.value += '/'" >	
+				</td>
+			</tr>
+
+		</table>
+		</table>
+		</table>
+		</table>
+	</form>
+</div>
+</body>
+</html>
